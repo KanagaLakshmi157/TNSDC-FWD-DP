@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.Kanaga Lakshmi - Portfolio</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            cursor: auto;
+        }
+        .message-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            z-index: 10000;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        .message-box.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-200 to-purple-200 min-h-screen text-gray-800 flex flex-col">
+
+    <!-- Header and Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white bg-opacity-80 backdrop-blur-sm shadow-md rounded-b-lg m-4 p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Kanaga Lakshmi.V</a>
+            <ul class="flex space-x-6 text-lg font-medium">
+                <li><a href="#home" class="hover:text-purple-600 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-purple-600 transition-colors">About Me</a></li>
+                <li><a href="#contact" class="hover:text-purple-600 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+
+        <!-- Hero Section -->
+        <section id="home" class="flex flex-col items-center justify-center text-center py-16">
+            <div class="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-xl ring-4 ring-white ring-opacity-60 mb-8 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:ring-purple-300">
+                <!-- Replace the path below with your actual image path -->
+                <img src="C:\Users\admin\Pictures\image.jpeg" alt="Kanaga Lakshmi Profile Photo" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-4 transition-colors duration-300 hover:text-pink-500">Kanaga Lakshmi.V</h1>
+            <p class="text-xl sm:text-2xl font-medium text-gray-600 max-w-2xl">
+                A data science student with a passion to become a full stack developer.
+            </p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white bg-opacity-50 p-8 rounded-lg shadow-lg mb-8 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-purple-300">
+            <h2 class="text-3xl font-semibold text-center mb-4 text-gray-800">About Me</h2>
+            <p class="text-lg text-gray-700 text-center mb-6">
+                I am a dedicated data science student, always seeking to expand my knowledge and skills. My journey is driven by a profound interest in combining analytical insights with the creative power of full stack development. I am excited to build intuitive and robust applications that solve real-world problems.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Programming Skills</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 inline-block text-left">
+                        <li>Arduino</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Designing Skills</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 inline-block text-left">
+                        <li>Canva</li>
+                        <li>Photoshop</li>
+                        <li>DaVinci Resolve</li>
+                        <li>Alight Motion</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="bg-white bg-opacity-50 p-8 rounded-lg shadow-lg mb-8 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-blue-300">
+            <h2 class="text-3xl font-semibold text-center mb-4 text-gray-800">Educational Qualification</h2>
+            <div class="space-y-6 text-lg text-gray-700">
+                <div class="bg-white bg-opacity-80 rounded-lg p-4 shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold text-gray-900">Bachelor of Science in Data Science</h3>
+                    <p>XYZ College, Affiliated to ABC University</p>
+                    <p class="text-sm text-gray-600">2022 – 2025 (Expected)</p>
+                </div>
+                <div class="bg-white bg-opacity-80 rounded-lg p-4 shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold text-gray-900">Higher Secondary Education (HSC)</h3>
+                    <p>Government Girls Higher Secondary School</p>
+                    <p class="text-sm text-gray-600">2020 – 2022</p>
+                </div>
+                <div class="bg-white bg-opacity-80 rounded-lg p-4 shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold text-gray-900">Secondary School Leaving Certificate (SSLC)</h3>
+                    <p>Government Girls Higher Secondary School</p>
+                    <p class="text-sm text-gray-600">2019 – 2020</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm mt-8 mb-4">
+        &copy; 2025 Kanaga Lakshmi.V All rights reserved.
+    </footer>
+
+</body>
+</html>
