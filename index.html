@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V.Kanaga Lakshmi - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-br from-blue-200 to-purple-200 min-h-screen text-gray-800 flex flex-col overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white bg-opacity-80 backdrop-blur-sm shadow-md rounded-b-lg m-4 p-4 fade-in-down">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-900 hover:text-purple-600 transition-colors">Kanaga Lakshmi.V</a>
+      <ul class="flex space-x-6 text-lg font-medium">
+        <li><a href="#home" class="hover:text-purple-600 transition-colors">Home</a></li>
+        <li><a href="#about" class="hover:text-purple-600 transition-colors">About Me</a></li>
+        <li><a href="#education" class="hover:text-purple-600 transition-colors">Education</a></li>
+        <li><a href="#contact" class="hover:text-purple-600 transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container mx-auto px-4 py-8 flex-grow">
+
+    <!-- Hero -->
+    <section id="home" class="flex flex-col items-center justify-center text-center py-16 slide-up">
+      <div class="profile-pic">
+        <img src="C:\Users\admin\Pictures\image.jpeg" alt="Kanaga Lakshmi Profile Photo">
+      </div>
+      <h1 class="hero-title">Kanaga Lakshmi.V</h1>
+      <p class="hero-subtitle">
+        A data science student with a passion to become a full stack developer.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="content-card fade-in">
+      <h2 class="section-title">About Me</h2>
+      <p class="text-lg text-gray-700 text-center mb-6">
+        I am a dedicated data science student, always seeking to expand my knowledge and skills. My journey is driven by a profound interest in combining analytical insights with the creative power of full stack development. I am excited to build intuitive and robust applications that solve real-world problems.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+        <div class="hover-card">
+          <h3 class="card-title">Programming Skills</h3>
+          <ul class="skill-list">
+            <li>Arduino</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>HTML</li>
+          </ul>
+        </div>
+        <div class="hover-card">
+          <h3 class="card-title">Designing Skills</h3>
+          <ul class="skill-list">
+            <li>Canva</li>
+            <li>Photoshop</li>
+            <li>DaVinci Resolve</li>
+            <li>Alight Motion</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="content-card fade-in">
+      <h2 class="section-title">Educational Qualification</h2>
+      <div class="space-y-6 text-lg text-gray-700">
+        <div class="edu-card">
+          <h3 class="text-xl font-bold text-gray-900">Bachelor of Science in Data Science</h3>
+          <p>XYZ College, Affiliated to ABC University</p>
+          <p class="text-sm text-gray-600">2022 – 2025 (Expected)</p>
+        </div>
+        <div class="edu-card">
+          <h3 class="text-xl font-bold text-gray-900">Higher Secondary Education (HSC)</h3>
+          <p>Government Girls Higher Secondary School</p>
+          <p class="text-sm text-gray-600">2020 – 2022</p>
+        </div>
+        <div class="edu-card">
+          <h3 class="text-xl font-bold text-gray-900">Secondary School Leaving Certificate (SSLC)</h3>
+          <p>Government Girls Higher Secondary School</p>
+          <p class="text-sm text-gray-600">2019 – 2020</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="content-card fade-in">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="text-center text-gray-700 mb-6">Let’s connect! Feel free to reach out via email or social media.</p>
+      <div class="flex justify-center space-x-6 text-2xl">
+        <a href="mailto:example@email.com" class="text-blue-600 hover:scale-125 transition-transform"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com" target="_blank" class="text-gray-800 hover:scale-125 transition-transform"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="text-blue-700 hover:scale-125 transition-transform"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com" target="_blank" class="text-pink-600 hover:scale-125 transition-transform"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm mt-8 mb-4 fade-in-up">
+    &copy; 2025 Kanaga Lakshmi.V — All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
